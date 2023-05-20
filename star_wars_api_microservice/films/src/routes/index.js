@@ -8,4 +8,6 @@ router.get("/", controllers.getFilms);
 
 router.post("/",middlewares.filmValidation, controllers.postFilms)
 
+router.get("/:id", controllers.getFilmsById)
+
 module.exports = router;

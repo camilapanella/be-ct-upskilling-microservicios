@@ -1,7 +1,7 @@
 const { ClientError } = require("../utils/errors");
 
 module.exports = (req, res, next) => {
-  const { name } = req.body;
-  if (name) return next();
-  else throw new ClientError("No name", 401);
+  const { title } = req.body;
+  if (title) return next();
+  else throw new ClientError("No title", 401);
 };

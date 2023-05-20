@@ -8,4 +8,7 @@ router.get("/", controllers.getPlanets);
 
 router.post("/",middlewares.planetValidation, controllers.postPlanets)
 
+router.get("/:id", controllers.getPlanetById);
+
+
 module.exports = router;
